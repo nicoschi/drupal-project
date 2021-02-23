@@ -75,6 +75,11 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/console": {
+                "https://github.com/hechoendrupal/drupal-console/pull/4277": "https://github.com/hechoendrupal/drupal-console/pull/4277.patch"
+            }
         }
     }
 }
